@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="EbayClient" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="EbayClient" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="EbayClient/Imports">
+      <xsd:import schemaLocation="http://localhost:42031/EbayFactory.svc?xsd=xsd0" namespace="EbayClient" />
+      <xsd:import schemaLocation="http://localhost:42031/EbayFactory.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:42031/EbayFactory.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:42031/EbayFactory.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EbayFactory" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEbayClient_FindByCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindByCategory" />
+  </wsdl:message>
+  <wsdl:message name="IEbayClient_FindByCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEbayClient_EbayTopLevelCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:EbayTopLevelCategories" />
+  </wsdl:message>
+  <wsdl:message name="IEbayClient_EbayTopLevelCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EbayTopLevelCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEbayClient_GetCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategories" />
+  </wsdl:message>
+  <wsdl:message name="IEbayClient_GetCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEbayClient_ItemByCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:ItemByCategory" />
+  </wsdl:message>
+  <wsdl:message name="IEbayClient_ItemByCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ItemByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEbayClient">
+    <wsdl:operation name="FindByCategory">
+      <wsdl:input wsaw:Action="EbayClient/IEbayClient/FindByCategory" message="tns:IEbayClient_FindByCategory_InputMessage" />
+      <wsdl:output wsaw:Action="EbayClient/IEbayClient/FindByCategoryResponse" message="tns:IEbayClient_FindByCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EbayTopLevelCategories">
+      <wsdl:input wsaw:Action="EbayClient/IEbayClient/EbayTopLevelCategories" message="tns:IEbayClient_EbayTopLevelCategories_InputMessage" />
+      <wsdl:output wsaw:Action="EbayClient/IEbayClient/EbayTopLevelCategoriesResponse" message="tns:IEbayClient_EbayTopLevelCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategories">
+      <wsdl:input wsaw:Action="EbayClient/IEbayClient/GetCategories" message="tns:IEbayClient_GetCategories_InputMessage" />
+      <wsdl:output wsaw:Action="EbayClient/IEbayClient/GetCategoriesResponse" message="tns:IEbayClient_GetCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ItemByCategory">
+      <wsdl:input wsaw:Action="EbayClient/IEbayClient/ItemByCategory" message="tns:IEbayClient_ItemByCategory_InputMessage" />
+      <wsdl:output wsaw:Action="EbayClient/IEbayClient/ItemByCategoryResponse" message="tns:IEbayClient_ItemByCategory_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

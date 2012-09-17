@@ -1,0 +1,43 @@
+﻿@model IEnumerable<EbayMVC.Models.Products>
+
+@{
+    ViewBag.Title = "Index";
+    
+}
+
+<h2>Index</h2>
+<!--
+<table>
+    <tr>
+        <th>
+            listing_url
+        </th>
+        <th>
+            gallery_url
+        </th>
+        <th>
+            item_title
+        </th>
+        <th>
+            tblCategory
+        </th>
+        <th></th>
+    </tr>
+    -->
+    <div id="container">
+@foreach (var item in Model) {
+    
+
+    
+
+	<div class="grid">
+		<div class="imgholder">
+			<img src=" @Html.DisplayFor(modelItem => item.gallery_url)" />
+		</div>
+		<strong>@Html.DisplayFor(modelItem => item.item_title)</strong>
+		<p><a href=" @Html.DisplayFor(modelItem => item.listing_url)"> Click to view</a></p>
+</div>
+    
+    
+}
+</div>

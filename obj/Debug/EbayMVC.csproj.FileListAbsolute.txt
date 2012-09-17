@@ -1,0 +1,7 @@
+C:\Users\richard\Documents\Visual Studio 2010\Projects\EbayFactory\EbayMVC\bin\EbayMVC.dll
+C:\Users\richard\Documents\Visual Studio 2010\Projects\EbayFactory\EbayMVC\bin\EbayMVC.pdb
+C:\Users\richard\Documents\Visual Studio 2010\Projects\EbayFactory\EbayMVC\bin\EntityFramework.dll
+C:\Users\richard\Documents\Visual Studio 2010\Projects\EbayFactory\EbayMVC\bin\EntityFramework.xml
+C:\Users\richard\Documents\Visual Studio 2010\Projects\EbayFactory\EbayMVC\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\richard\Documents\Visual Studio 2010\Projects\EbayFactory\EbayMVC\obj\Debug\EbayMVC.dll
+C:\Users\richard\Documents\Visual Studio 2010\Projects\EbayFactory\EbayMVC\obj\Debug\EbayMVC.pdb

@@ -1,0 +1,38 @@
+﻿@model EbayMVC.Models.Products
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Products</legend>
+
+    <div class="display-label">listing_url</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.listing_url)
+    </div>
+
+    <div class="display-label">gallery_url</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gallery_url)
+    </div>
+
+    <div class="display-label">item_title</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.item_title)
+    </div>
+
+    <div class="display-label">tblCategory</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tblCategory)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
