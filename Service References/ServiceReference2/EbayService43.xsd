@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EbayFactory" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EbayFactory" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOftblItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="tblItem" nillable="true" type="tns:tblItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOftblItem" nillable="true" type="tns:ArrayOftblItem" />
+  <xs:complexType name="tblItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="gallery_url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="item_category" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="item_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="item_title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="listing_url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tblCategory" nillable="true" type="tns:tblCategory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblItem" nillable="true" type="tns:tblItem" />
+  <xs:complexType name="tblCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="category_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="category_level" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="category_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="category_parent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tblItems" nillable="true" type="tns:ArrayOftblItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tblCategory" nillable="true" type="tns:tblCategory" />
+</xs:schema>
