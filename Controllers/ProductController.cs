@@ -23,7 +23,7 @@ namespace EbayMVC.Controllers
             List<Products> prodList = new List<Products> { };
             EbayClientClient c = new EbayClientClient();
 
-            var result = c.ItemByCategory("48818").ToList();
+            var result = c.ItemByCategory("117031").ToList();
             foreach (tblItem t in result)
             {
                 Products p = new Products

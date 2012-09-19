@@ -139,8 +139,22 @@
     </None>
     <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference2\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference2\EbayClient1.wsdl" />
     <None Include="Service References\ServiceReference2\EbayMVC.ServiceReference2.tblItem.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayService1.wsdl" />
+    <None Include="Service References\ServiceReference2\EbayService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayService41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayService42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayService43.xsd">
+      <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReference2\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
@@ -180,20 +194,6 @@
     <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
     <Content Include="Views\Product\Delete.cshtml" />
-    <None Include="Service References\ServiceReference2\EbayClient.wsdl" />
-    <None Include="Service References\ServiceReference2\EbayService.wsdl" />
-    <None Include="Service References\ServiceReference2\EbayService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference2\EbayService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference2\EbayService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference2\EbayService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
