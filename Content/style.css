@@ -117,6 +117,7 @@ a:hover, a:active{
 	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 	
+	
 	-webkit-transition: top 1s ease, left 1s ease;
 	-moz-transition: top 1s ease, left 1s ease;
 	-o-transition: top 1s ease, left 1s ease;
@@ -140,7 +141,10 @@ a:hover, a:active{
 	background:#ccc;
 	display:block;
 }
-
+#search
+{
+    width: 200px;
+}
 @media screen and (max-width : 1240px) {
 	body{
 		overflow:auto;

@@ -22,8 +22,13 @@ namespace EbayMVC.Controllers
             
             List<Products> prodList = new List<Products> { };
             EbayClientClient c = new EbayClientClient();
+            c.SetCategoryCount();
+            var cat = c.GetCategoryCount();
 
-            var result = c.ItemByCategory("38100").ToList();
+            var s = from i in cat select i.category_id;
+            string[] cats = s.ToArray();
+
+            var result = c.ItemByCategory(cats[1]).ToList();
             foreach (tblItem t in result)
             {
                 Products p = new Products
@@ -60,17 +65,31 @@ namespace EbayMVC.Controllers
         //
         // POST: /Product/Create
 
-        [HttpPost]
-        public ActionResult Create(Products products)
+        [AcceptVerbs(HttpVerbs.Post)]
+        public ActionResult Create(string products)
         {
-            if (ModelState.IsValid)
+            EbayClientClient c = new EbayClientClient();
+            List<Products> prodList = new List<Products> { };
+            string s = Request.Form["keyword"];
+             
+            var result = c.FindByKeyWord(s);
+        
+            foreach (tblItem t in result)
             {
-                db.Store.Add(products);
-                db.SaveChanges();
-                return RedirectToAction("Index");  
+                Products p = new Products
+                {
+                    Id = t.item_id,
+                    item_title = t.item_title,
+                    gallery_url = t.gallery_url,
+                    listing_url = t.listing_url,
+                    tblCategory = t.item_category
+                };
+                prodList.Add(p);
+                
+                
             }
-
-            return View(products);
+            
+            return View(prodList);
         }
         
         //

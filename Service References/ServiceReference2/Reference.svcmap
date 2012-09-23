@@ -21,12 +21,12 @@
     <MetadataSource Address="http://ebayservicehost.apphb.com/EbayService.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="EbayService4.xsd" MetadataType="Schema" ID="9d8b4805-1df9-4d5c-97eb-d2512a404cbe" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd0" />
-    <MetadataFile FileName="EbayService41.xsd" MetadataType="Schema" ID="ecc70130-b888-47c0-8e87-cfbe810009cd" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd1" />
-    <MetadataFile FileName="EbayService42.xsd" MetadataType="Schema" ID="4c18f47c-58ad-44f0-8ad3-beddfe9e9f2b" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd2" />
-    <MetadataFile FileName="EbayService43.xsd" MetadataType="Schema" ID="1d51122b-9e40-4a1c-a5b6-6bfe15c7705e" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd3" />
-    <MetadataFile FileName="EbayService1.wsdl" MetadataType="Wsdl" ID="717519ae-4f38-47ce-b83d-1e2b54034a88" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="EbayClient1.wsdl" MetadataType="Wsdl" ID="f29edd17-f11c-4b0a-820d-5045833ba4e6" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?wsdl" />
+    <MetadataFile FileName="EbayService.xsd" MetadataType="Schema" ID="846d4c31-0992-43ef-a643-66da06ae42dd" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EbayService1.xsd" MetadataType="Schema" ID="66664827-b3dd-4518-8ba8-981ac6239ca2" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EbayService2.xsd" MetadataType="Schema" ID="20b90d07-0003-4df8-9948-52be10307327" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EbayService3.xsd" MetadataType="Schema" ID="4138f958-2a94-4790-89dc-e0e04e8f6c64" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EbayService.wsdl" MetadataType="Wsdl" ID="45916ef8-217c-4dcb-8b18-defca43f8cd7" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="EbayClient1.wsdl" MetadataType="Wsdl" ID="e6dce28d-04d0-488b-87f6-c4ac6481bdb7" SourceId="1" SourceUrl="http://ebayservicehost.apphb.com/EbayService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

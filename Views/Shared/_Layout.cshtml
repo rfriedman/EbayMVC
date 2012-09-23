@@ -24,7 +24,7 @@
             //blocksit define
             $(window).load(function () {
                 $('#container').BlocksIt({
-                    numOfCol: 5,
+                    numOfCol: 4,
                     offsetX: 8,
                     offsetY: 8
                 });
@@ -46,7 +46,7 @@
                     col = 4;
                 } else {
                     conWidth = 1100;
-                    col = 5;
+                    col = 4;
                 }
 
                 if (conWidth != currentWidth) {
@@ -67,7 +67,7 @@
     <div class="page">
         <header>
             <div id="title">
-                <h1></h1>
+                <img src="../../images.jpg"  />
             </div>
             <div id="logindisplay">
                 @Html.Partial("_LogOnPartial")
@@ -75,10 +75,11 @@
             <nav>
                 <ul id="menu">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li><br /><br />
                 </ul>
             </nav>
         </header>
+        <hr />
         <section id="wrapper">
             @RenderBody()
         </section>

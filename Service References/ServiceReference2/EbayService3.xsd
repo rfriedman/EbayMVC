@@ -13,18 +13,20 @@
       <xs:element minOccurs="0" name="item_id" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="item_title" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="listing_url" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="tblCategory" nillable="true" type="tns:tblCategory" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="tblItem" nillable="true" type="tns:tblItem" />
-  <xs:complexType name="tblCategory">
+  <xs:complexType name="ArrayOfcat_count">
     <xs:sequence>
-      <xs:element minOccurs="0" name="category_id" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="category_level" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="category_name" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="category_parent" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="tblItems" nillable="true" type="tns:ArrayOftblItem" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cat_count" nillable="true" type="tns:cat_count" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="tblCategory" nillable="true" type="tns:tblCategory" />
+  <xs:element name="ArrayOfcat_count" nillable="true" type="tns:ArrayOfcat_count" />
+  <xs:complexType name="cat_count">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="category_count" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="category_id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="cat_count" nillable="true" type="tns:cat_count" />
 </xs:schema>

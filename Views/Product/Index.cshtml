@@ -4,11 +4,26 @@
     ViewBag.Title = "Select Product to View";
     
 }
+<div id="container">
+<div class="grid">
+@{using(Html.BeginForm("Create", "Product", FormMethod.Post))
+  {
+     
+    <h2>@Html.Encode(ViewData["Message"])</h2>
+       <strong> Search KeyWord:</strong>
+     
+      @Html.TextBox("keyword", null, new { @class = "search"})
+        <input type="submit" value="Search" />
+        
+  }
+  }
+        </div>
 
-<h2><img src="../../images.jpg" /></h2>
 
-    <div id="container">
-@foreach (var item in Model) {
+
+    
+@foreach (var item in Model)
+{
     
 
         

@@ -124,24 +124,28 @@
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference2\configuration.svcinfo" />
-    <None Include="Service References\ServiceReference2\EbayClient1.wsdl" />
-    <None Include="Service References\ServiceReference2\EbayMVC.ServiceReference2.tblItem.datasource">
+    <None Include="Service References\ServiceReference2\EbayClient.wsdl" />
+    <None Include="Service References\ServiceReference2\EbayFactory.wsdl" />
+    <None Include="Service References\ServiceReference2\EbayFactory.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayFactory1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayFactory2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayFactory3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\EbayMVC.ServiceReference2.cat_count.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ServiceReference2\EbayService1.wsdl" />
-    <None Include="Service References\ServiceReference2\EbayService4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference2\EbayService41.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference2\EbayService42.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference2\EbayService43.xsd">
-      <SubType>Designer</SubType>
+    <None Include="Service References\ServiceReference2\EbayMVC.ServiceReference2.tblItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference2\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>

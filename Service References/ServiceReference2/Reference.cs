@@ -37,9 +37,6 @@ namespace EbayMVC.ServiceReference2 {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string listing_urlField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private EbayMVC.ServiceReference2.tblCategory tblCategoryField;
-        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -115,19 +112,6 @@ namespace EbayMVC.ServiceReference2 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public EbayMVC.ServiceReference2.tblCategory tblCategory {
-            get {
-                return this.tblCategoryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.tblCategoryField, value) != true)) {
-                    this.tblCategoryField = value;
-                    this.RaisePropertyChanged("tblCategory");
-                }
-            }
-        }
-        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -140,27 +124,18 @@ namespace EbayMVC.ServiceReference2 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="tblCategory", Namespace="http://schemas.datacontract.org/2004/07/EbayFactory")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="cat_count", Namespace="http://schemas.datacontract.org/2004/07/EbayFactory")]
     [System.SerializableAttribute()]
-    public partial class tblCategory : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class cat_count : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> category_countField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string category_idField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string category_levelField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string category_nameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string category_parentField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private EbayMVC.ServiceReference2.tblItem[] tblItemsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -173,6 +148,19 @@ namespace EbayMVC.ServiceReference2 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> category_count {
+            get {
+                return this.category_countField;
+            }
+            set {
+                if ((this.category_countField.Equals(value) != true)) {
+                    this.category_countField = value;
+                    this.RaisePropertyChanged("category_count");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string category_id {
             get {
                 return this.category_idField;
@@ -181,58 +169,6 @@ namespace EbayMVC.ServiceReference2 {
                 if ((object.ReferenceEquals(this.category_idField, value) != true)) {
                     this.category_idField = value;
                     this.RaisePropertyChanged("category_id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string category_level {
-            get {
-                return this.category_levelField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.category_levelField, value) != true)) {
-                    this.category_levelField = value;
-                    this.RaisePropertyChanged("category_level");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string category_name {
-            get {
-                return this.category_nameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.category_nameField, value) != true)) {
-                    this.category_nameField = value;
-                    this.RaisePropertyChanged("category_name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string category_parent {
-            get {
-                return this.category_parentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.category_parentField, value) != true)) {
-                    this.category_parentField = value;
-                    this.RaisePropertyChanged("category_parent");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public EbayMVC.ServiceReference2.tblItem[] tblItems {
-            get {
-                return this.tblItemsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.tblItemsField, value) != true)) {
-                    this.tblItemsField = value;
-                    this.RaisePropertyChanged("tblItems");
                 }
             }
         }
@@ -251,20 +187,32 @@ namespace EbayMVC.ServiceReference2 {
     [System.ServiceModel.ServiceContractAttribute(Namespace="EbayClient", ConfigurationName="ServiceReference2.IEbayClient")]
     public interface IEbayClient {
         
-        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClient/FindByCategory", ReplyAction="EbayClient/IEbayClient/FindByCategoryResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientWrite/FindByCategory", ReplyAction="EbayClient/IEbayClientWrite/FindByCategoryResponse")]
         void FindByCategory(string[] items);
         
-        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClient/EbayTopLevelCategories", ReplyAction="EbayClient/IEbayClient/EbayTopLevelCategoriesResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientWrite/EbayTopLevelCategories", ReplyAction="EbayClient/IEbayClientWrite/EbayTopLevelCategoriesResponse")]
         void EbayTopLevelCategories();
         
-        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClient/GetCategories", ReplyAction="EbayClient/IEbayClient/GetCategoriesResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientWrite/CreateSiteDataBase", ReplyAction="EbayClient/IEbayClientWrite/CreateSiteDataBaseResponse")]
+        void CreateSiteDataBase();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientWrite/SetCategoryCount", ReplyAction="EbayClient/IEbayClientWrite/SetCategoryCountResponse")]
+        void SetCategoryCount();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientRead/GetCategories", ReplyAction="EbayClient/IEbayClientRead/GetCategoriesResponse")]
         string[] GetCategories();
         
-        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClient/ItemByCategory", ReplyAction="EbayClient/IEbayClient/ItemByCategoryResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientRead/ItemByCategory", ReplyAction="EbayClient/IEbayClientRead/ItemByCategoryResponse")]
         EbayMVC.ServiceReference2.tblItem[] ItemByCategory(string cat);
         
-        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClient/CreateSiteDataBase", ReplyAction="EbayClient/IEbayClient/CreateSiteDataBaseResponse")]
-        void CreateSiteDataBase();
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientRead/TestConnection", ReplyAction="EbayClient/IEbayClientRead/TestConnectionResponse")]
+        string TestConnection();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientRead/GetCategoryCount", ReplyAction="EbayClient/IEbayClientRead/GetCategoryCountResponse")]
+        EbayMVC.ServiceReference2.cat_count[] GetCategoryCount();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="EbayClient/IEbayClientRead/FindByKeyWord", ReplyAction="EbayClient/IEbayClientRead/FindByKeyWordResponse")]
+        EbayMVC.ServiceReference2.tblItem[] FindByKeyWord(string items);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -302,6 +250,14 @@ namespace EbayMVC.ServiceReference2 {
             base.Channel.EbayTopLevelCategories();
         }
         
+        public void CreateSiteDataBase() {
+            base.Channel.CreateSiteDataBase();
+        }
+        
+        public void SetCategoryCount() {
+            base.Channel.SetCategoryCount();
+        }
+        
         public string[] GetCategories() {
             return base.Channel.GetCategories();
         }
@@ -310,8 +266,16 @@ namespace EbayMVC.ServiceReference2 {
             return base.Channel.ItemByCategory(cat);
         }
         
-        public void CreateSiteDataBase() {
-            base.Channel.CreateSiteDataBase();
+        public string TestConnection() {
+            return base.Channel.TestConnection();
+        }
+        
+        public EbayMVC.ServiceReference2.cat_count[] GetCategoryCount() {
+            return base.Channel.GetCategoryCount();
+        }
+        
+        public EbayMVC.ServiceReference2.tblItem[] FindByKeyWord(string items) {
+            return base.Channel.FindByKeyWord(items);
         }
     }
 }
