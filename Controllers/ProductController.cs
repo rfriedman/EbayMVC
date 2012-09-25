@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using EbayMVC.Models;
-using EbayMVC.ServiceReference2;
+using EbayMVC.ServiceReference1;
 
 namespace EbayMVC.Controllers
 { 
@@ -21,8 +21,10 @@ namespace EbayMVC.Controllers
         {
             
             List<Products> prodList = new List<Products> { };
+            
             EbayClientClient c = new EbayClientClient();
-            c.SetCategoryCount();
+            
+            
             var cat = c.GetCategoryCount();
 
             var s = from i in cat select i.category_id;

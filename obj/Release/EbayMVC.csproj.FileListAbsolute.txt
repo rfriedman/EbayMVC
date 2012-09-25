@@ -1,0 +1,10 @@
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\bin\EbayMVC.dll
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\bin\EbayMVC.pdb
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\bin\EntityFramework.dll
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\bin\EntityFramework.xml
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\obj\Release\ResolveAssemblyReference.cache
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\obj\Release\EbayMVC.Properties.Resources.resources
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\obj\Release\GenerateResource.read.1.tlog
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\obj\Release\GenerateResource.write.1.tlog
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\obj\Release\EbayMVC.dll
+C:\Users\richard\documents\visual studio 2010\Projects\EbayFactory\EbayMVC\obj\Release\EbayMVC.pdb
