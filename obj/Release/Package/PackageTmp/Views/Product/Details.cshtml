@@ -1,0 +1,35 @@
+﻿@model EbayMVC.Models.Products
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Products</legend>
+
+    <div class="display-label">listing_url</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.listing_url)
+    </div>
+
+    <div class="display-label">gallery_url</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gallery_url)
+    </div>
+
+    <div class="display-label">item_title</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.item_title)
+    </div>
+
+    <div class="display-label">tblCategory</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tblCategory)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

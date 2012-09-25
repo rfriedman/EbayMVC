@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using EbayMVC.Models;
-using EbayMVC.ServiceReference1;
+using EbayMVC.appharbor;
 
 namespace EbayMVC.Controllers
 { 

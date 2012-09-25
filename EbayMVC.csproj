@@ -83,6 +83,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Service References\appharbor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -136,6 +141,26 @@
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
+    <None Include="Service References\appharbor\EbayClient.wsdl" />
+    <None Include="Service References\appharbor\EbayMVC.appharbor.cat_count.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\appharbor\EbayMVC.appharbor.tblItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\appharbor\EbayService.wsdl" />
+    <None Include="Service References\appharbor\EbayService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\appharbor\EbayService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\appharbor\EbayService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\appharbor\EbayService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference1\configuration.svcinfo" />
     <None Include="Service References\ServiceReference1\EbayMVC.ServiceReference1.cat_count.datasource">
@@ -145,6 +170,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\appharbor\configuration91.svcinfo" />
+    <None Include="Service References\appharbor\configuration.svcinfo" />
+    <None Include="Service References\appharbor\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -218,6 +249,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\appharbor\" />
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
