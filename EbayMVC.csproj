@@ -125,6 +125,7 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
+    <Content Include="google384cbf220ec43106.html" />
     <Content Include="images.jpg" />
     <Content Include="s.gif" />
     <Content Include="Scripts\blocksit.js" />
